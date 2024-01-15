@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { OpenAIStream, StreamingTextResponse } from "ai";
-import kv from "@vercel/kv";
+import { kv } from "@vercel/kv";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   }
 
   const response = await openai.chat.completions.create({
-    model: "gpt-3.5-turbo",
+    model: "gpt-3.5-turbo-1106",
     stream: true,
     messages,
   });

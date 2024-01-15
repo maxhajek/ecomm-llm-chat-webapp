@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/localizations": "^1.26.13",
+    "@clerk/nextjs": "^4.29.3",
+    "@formatjs/intl-localematcher": "^0.5.2",
+    "@vercel/analytics": "^1.1.1",
     "@vercel/kv": "^1.0.1",
+    "@vercel/postgres": "^0.5.1",
     "ai": "^2.2.31",
+    "negotiator": "^0.6.3",
     "next": "14.0.4",
+    "next-intl": "^3.4.2",
     "openai": "^4.24.7",
     "react": "^18",
     "react-dom": "^18"

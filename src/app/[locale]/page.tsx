@@ -1,5 +1,6 @@
 "use client";
 
+import { UserButton } from "@clerk/nextjs";
 import { useChat } from "ai/react";
 
 export default function Chat() {
@@ -21,6 +22,9 @@ export default function Chat() {
           onChange={handleInputChange}
         />
       </form>
+      <div className="h-screen">
+        <UserButton afterSignOutUrl="/" />
+      </div>
     </div>
   );
 }
